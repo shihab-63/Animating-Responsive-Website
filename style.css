@@ -190,3 +190,142 @@ section {
     color: var(--main-color);
     margin-left: 20px;
 }
+
+.icon {
+    position: absolute;
+    top: 50%;
+    padding: 0 7%;
+    transform: translateY(-50%);
+}
+
+.icon i {
+    display: block;
+    color: var(--text-color);
+    margin: 35px 0;
+    font-size: 23px;
+    transition: all .6s ease;
+}
+
+.icon i:hover {
+    color: var(--main-color);
+    transform: translateY(-5px);
+}
+
+/* Responsive Here */
+@media (max-width: 1750px) {
+    .header_area {
+        padding: 22px 4%;
+    }
+
+    .icon {
+        padding: 0 4%;
+    }
+}
+@media (max-width: 1750px) {
+    :root {
+        --big-font: 5.5rem;
+        --p-font: 15px;
+    }
+}
+
+@media (max-width: 1340px) {
+    .icon {
+        display: none;
+    }
+    section {
+        padding: 0 4%;
+    }
+}
+
+@media (max-width: 1130px) {
+    :root {
+        --big-font: 4.5rem;
+    }
+
+    .hero_btnn {
+        padding: 10px 22px;
+    }
+
+    .proce {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 880px) {
+    #menu_icon {
+        display: block;
+    }
+
+    .nav_list {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        flex-direction: column;
+        backdrop-filter: blur(30px);
+        width: 100%;
+        height: 100vh;
+        padding: 100px 50px;
+        transition: all .6s ease-in-out;
+        text-align: center;
+    }
+
+    .nav_list a {
+        display: block;
+        margin-bottom: 25px;
+        font-size: 1.7rem;
+    }
+
+    .nav_list.open {
+        left: 0;
+    }
+
+    :root {
+        --big-font: 3.8rem;
+        --p-font: 12px;
+    }
+}
+
+@media (max-width: 850px) {
+    .hero {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .hero_text {
+        text-align: center;
+        padding-top: 130px;
+    }
+
+    .hero_text p {
+        max-width: 100%;
+    }
+
+    .hero_btn {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .hero_btnn {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 450px) {
+    :root {
+        --big-font: 3rem;
+        --p-font: 10px;
+    }
+
+    .hero_btnn {
+        font-size: 13px;
+        padding: 8px 18px;
+    }
+
+    .proce {
+        font-size: 15px;
+    }
+
+    .proce span {
+        font-size: 10px;
+    }
+}
